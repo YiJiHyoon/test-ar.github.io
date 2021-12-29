@@ -12,17 +12,17 @@
 <script src="./script.js"></script>
 <script src="./app.js"></script>
 <body style="margin: 0; overflow: hidden;">
-<h1>AR 테스트1111</h1>
+<h1>AR 테스트</h1>
+<div class="controls">
+    <button id="button">Get camera</button>
+    <select id="select">
+        <option></option>
+    </select>
+</div>
 <a-scene
         vr-mode-ui="enabled: false"
         embedded
-        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;'>
-    <div class="controls">
-        <button id="button">Get camera</button>
-        <select id="select">
-            <option></option>
-        </select>
-    </div>
+        arjs='sourceType: webcam; sourceWidth:960; sourceHeight:960; displayWidth: 960; displayHeight: 960;'>
     <a-camera gps-camera rotation-reader>
     </a-camera>
 </a-scene>
